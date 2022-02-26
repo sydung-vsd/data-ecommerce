@@ -3,7 +3,7 @@ Các bước tiến hành deploy REST API với JSON Server lên Heroku
 
 Clone repo sau về máy tính của bạn:
 
-    git clone https://github.com/jesperorb/json-server-heroku.git
+    git clone https://github.com/sydung-vsd/data-ecommerce
 
 Sau đó thay db.json thành file json của bạn
 
@@ -36,3 +36,16 @@ heroku open
 
 heroku logs --tail
 
+
+-----------Các bước deploy lên surge.sh----------- 
+1 - Cài surge cho global.
+    npm i -g surge 
+2 - Chạy npm run build.
+3 - Vào folder buil vừa được tạo ra.
+    cd build
+4 - Copy file index.html thêm một file khác, và đổi tên nó thành 200.html  (có để load khác page vẫn được)
+5 - Deploy folder lên surge.sh
+    surge
+    
+6 - Nhập email vào password đã dùng để đăng nhập trên surge.
+7 - Chỉnh domain để dùng cho sau này.
